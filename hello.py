@@ -1,7 +1,7 @@
+import string
+
 $ cat hello.py 
 print('Hello, world!')
-
-print('Hey')
 
 $ pyarmor obfuscate hello.py
 ...
@@ -25,3 +25,10 @@ df', 1)
 
 $ python dist/hello.py
 Hello, world!
+
+print('Hey')
+
+from random import *
+characters = string.ascii_letters + string.punctuation  + string.digits
+password =  "".join(choice(characters) for x in range(randint(8, 16)))
+print password
