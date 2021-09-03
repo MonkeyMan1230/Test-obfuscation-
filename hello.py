@@ -1,5 +1,3 @@
-#pk
-
 $ cat hello.py 
 print('Hello, world!')
 
